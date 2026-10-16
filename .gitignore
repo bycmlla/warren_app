@@ -1,0 +1,43 @@
+# Dependencias (backend e frontend)
+node_modules/
+
+# Configuracao local e segredos
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+/frontend/assets/Usuário e senha administrador.md
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+
+# Builds, caches e cobertura
+.expo/
+dist/
+build/
+web-build/
+expo-env.d.ts
+*.tsbuildinfo
+.cache/
+.eslintcache
+coverage/
+.nyc_output/
+
+# Arquivos enviados e resultados locais de validacao
+/backend/storage/
+/validacao-*/
+
+# Logs e arquivos temporarios
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini

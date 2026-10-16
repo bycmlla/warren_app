@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "criar-admin": "node scripts/criar-admin.js",
+    "migrar": "node scripts/migrar.js",
+    "publicar-documento": "node scripts/publicar-documento.js",
+    "test:integracao": "node --test --test-concurrency=1 integracao/comercial.js integracao/restritos.js integracao/aulas.js integracao/foto.js integracao/banner.js",
+    "test:integracao:isolada": "node scripts/testar-integracao-isolada.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      ".env"
+    ],
+    "ext": "js,json,env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "ffmpeg-static": "5.3.0",
+    "ffprobe-static": "3.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
